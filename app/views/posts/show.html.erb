@@ -1,0 +1,16 @@
+<h1>Posts#show</h1>
+<p>Find me in app/views/posts/show.html.erb</p>
+
+<div id="postShow_wrapper">
+	<div id="post_username">
+		<h5> This post was written by <%= @user.first_name %> </h5>
+	</div>
+
+	<div id="post_title">
+		<h3> <%= @post.title %> </h3>
+	</div>
+
+	<div id="post_content">
+		<p> <%= @post.content %> </p>
+	</div>
+</div>
