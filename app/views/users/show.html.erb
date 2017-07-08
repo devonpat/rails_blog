@@ -1,0 +1,23 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+
+<div id="post_wrapper">
+	<%= form_with model: @post, local: true do |f| %>
+		<%= f.label :Title %>
+		<%= f.text_field :title%>
+		<br>
+		<%= f.label :Post %>
+		<%= f.text_area :content, :size => "60%x10%" %>
+		<br>
+		<%= f.submit %>
+	<% end %>
+</div>
+
+<div id="user_posts">
+	<% @user.posts.each do |post| %>
+		<h3><%= link_to post.title @post %></h3>
+	<% end %>
+</div>
+
+
+

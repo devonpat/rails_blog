@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#body {
+	background: url(/assets/dirt.jpg);
+}
+
+#new_user {
+	background-color: lightgreen;
+	height: 400px;
+	width: 25vw;
+	border: solid white;
+	padding: 15px;
+}
+
+#return_user {
+	background-color: lightgreen;
+	height: 350px;
+	width: 25vw;
+	border: solid white;
+}
+
+#new_profile {
+	height: 150px;
+	width: 200px;
+}
+
+#home_left_image {
+	height: 500px;
+	width: 5vw;
+	margin: 35px;
+}
+
+#home_right_image {
+	height: 400px;
+	width: 5vw;
+	margin: 35px;
+}
+
+#sessions_login {
+	background-color: lightgreen;
+	height: 400px;
+	width: 25vw;
+	border: solid white;
+	padding: 15px;
+}
+
+.navbar-text {
+	width: 300px;
+	height: 50px;
+}
+
+#post_wrapper {
+	background-color: lightgreen;
+	height: 400px;
+	width: 50vw;
+	border: solid white;
+	padding: 15px;
+}
+
+#user_posts {
+	background-color: #ffff4d;
+	height: 400px;
+	width: 50vw;
+	border: solid white;
+	padding: 15px;
+}
+
+#postShow_wrapper {
+	background-color: lightgreen;
+	height: 400px;
+	width: 50vw;
+	border: solid white;
+	padding: 15px;
+}

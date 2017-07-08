@@ -1,0 +1,14 @@
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+
+<div id="sessions_login">
+	<%= form_with url: sessions_path, local: true do |f| %>
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+		<br>
+		<%= f.label :password %>
+		<%= f.text_field :password %>
+		<br>
+		<%= f.submit %>
+	<% end %>
+</div>
