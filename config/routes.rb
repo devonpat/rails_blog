@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  
+
   root 'homes#index'
   resources :sessions, only: [:new, :create]
   delete '/sign_out' => 'sessions#destroy'
+  resources :profile
   resources :users
   resources :posts
   resources :comments
