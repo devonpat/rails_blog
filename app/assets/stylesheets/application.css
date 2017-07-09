@@ -86,3 +86,11 @@
 	border: solid white;
 	padding: 15px;
 }
+
+#profile_profile_info {
+	background-color: lightgreen;
+	height: 400px;
+	width: 50vw;
+	border: solid white;
+	padding: 15px;
+}

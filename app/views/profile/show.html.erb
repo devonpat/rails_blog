@@ -1,0 +1,16 @@
+<h2 id="">Things about you</h2>
+
+<div id="profile_profile_info">
+	<li> <%= @user.first_name + " " +@user.last_name %> </li>
+	<li> "I have Chickens " <%= @user.chickens %></li>
+	<li> "I have Bees " <%= @user.bees %></li>
+	<li> "I have Bats " <%= @user.bats %></li>
+	<li> "I have Dogs " <%= @user.dogs %></li>
+	<li> "I have Cats " <%= @user.cats %></li>
+</div>
+
+<div id="user_posts">
+	<% @user.posts.each do |post| %>
+		<h3><%= link_to post.title, post_path %></h3>
+	<% end %>
+</div>

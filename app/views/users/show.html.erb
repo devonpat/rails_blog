@@ -1,5 +1,4 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>"Link to the profile of" <%= link_to @user.first_name, profile_path %> </h1>
 
 <div id="post_wrapper">
 	<%= form_with model: @post, local: true do |f| %>
@@ -15,7 +14,7 @@
 
 <div id="user_posts">
 	<% @user.posts.each do |post| %>
-		<h3><%= link_to post.title @post %></h3>
+		<h3><%= link_to post.title, post_path %></h3>
 	<% end %>
 </div>
 
