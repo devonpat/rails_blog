@@ -94,3 +94,11 @@
 	border: solid white;
 	padding: 15px;
 }
+
+#post_comments_wrapper{
+	background-color: #ffff4d;
+	height: 400px;
+	width: 50vw;
+	border: solid white;
+	padding: 15px;
+}

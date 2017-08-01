@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   def create
     @user = current_user
     @user.posts.create(params[:post])
-    redirect_to @user
+    @post = Post.find(params[:id])
   end
 
   def edit
@@ -18,7 +18,8 @@ class PostsController < ApplicationController
 
   def show
     @user = current_user
-    @posts = Post.find(params[:id])
+    @post = Post.find(params[:id])
+    @comment = Comment.new
   end
 
   def update
@@ -26,4 +27,11 @@ class PostsController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def comment_params
+    params.require(:comment).permit(:user_id, :post_id, :content)
+  end
+
 end
