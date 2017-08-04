@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   def create
     @user = current_user
     @user.posts.create(params[:post])
-    @post = Post.find(params[:id])
+    redirect_to @user
   end
 
   def edit

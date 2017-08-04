@@ -64,9 +64,12 @@
 }
 
 #post_wrapper {
+	margin-left: 20vw;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	background-color: lightgreen;
 	height: 400px;
-	width: 50vw;
+	width: 60vw;
 	border: solid white;
 	padding: 15px;
 }
@@ -74,15 +77,19 @@
 #user_posts {
 	background-color: #ffff4d;
 	height: 400px;
-	width: 50vw;
+	width: 60vw;
+	margin-left: 20vw;
 	border: solid white;
 	padding: 15px;
 }
 
 #postShow_wrapper {
 	background-color: lightgreen;
+	margin-left: 20vw;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	height: 400px;
-	width: 50vw;
+	width: 60vw;
 	border: solid white;
 	padding: 15px;
 }
@@ -97,8 +104,10 @@
 
 #post_comments_wrapper{
 	background-color: #ffff4d;
+	margin-left: 20vw;
+	margin-bottom: 30px;
 	height: 400px;
-	width: 50vw;
+	width: 60vw;
 	border: solid white;
 	padding: 15px;
 }
